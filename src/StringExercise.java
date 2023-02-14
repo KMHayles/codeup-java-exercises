@@ -18,6 +18,10 @@ public class StringExercise {
         String b = "We don't need no thought control";
         System.out.println(b);
 
+//Ricardo example
+//        String education = "We don't need no education";
+//        System.out.println(education.replace("education", "thought control"));
+
 //      Check "this" out!, "s inside of "s!
         String c = "Check \"this\" out!, \"s inside of \"s!";
         System.out.println(c);
@@ -29,6 +33,7 @@ public class StringExercise {
 //      I can do backslashes \, double backslashes \\,
         String e = "I can do backslashes \\, double backslashes \\\\, and the amazing triple backslash \\\\\\!";
         System.out.println(e);
+
 
     }
 }
