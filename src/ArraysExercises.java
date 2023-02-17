@@ -2,30 +2,48 @@ import java.util.Arrays;
 
 public class ArraysExercises {
 
-    public static void addPerson(Person[] people, Person person) {
-        Person[] newPeople = new Person[people.length + 1];
-        for (int i = 0; i < people.length; i++) {
-            newPeople[i] = people[i];
-        }
-        newPeople[people.length] = person;
-        people = newPeople;
-    }
-
-
     public static void main(String[] args) {
+
 //        int[] numbers = {1, 2, 3, 4, 5};
 //        System.out.println(Arrays.toString(numbers));
 
-//        String[] people = new String[3];
-//        people[0] = "Steven";
-//        people[1] = "Ken";
-//        people[2] = "Larry";
-//
-////        System.out.println(person[2]);
-//
-//        for (String person: people) {
-//            System.out.println(person);
+        Person[] people = new Person[3];
+        people[0] = new Person("Steven", 25);
+        people[1] = new Person("Ken", 36);
+        people[2] = new Person("Larry", 39);
+
+//        for (Person person: people) {
+//            System.out.println(person.getName()); //getName pulls out the name of the people
 //        }
+
+        people = Person.addPerson(people, new Person("Jeff", 33));
+
+        for (Person person: people) {
+            System.out.println(person.getName()); //getName pulls out the name of the people
+        }
+
+        /*
+        //JAVA built in method
+
+        public static String toString(int[] a) {
+            if (a == null)
+                return "null";
+            int iMax = a.length - 1;
+            if (iMax == -1)
+                return "[]";
+
+            StringBuilder b = new StringBuilder();
+            b.append('[');
+            for (int i = 0; ; i++) {
+                b.append(a[i]);
+                if (i == iMax)
+                    return b.append(']').toString();
+                b.append(", ");
+            }
+        }
+        */
+
+
 
     // TODO: Create a static method named addPerson. It should accept an array of Person objects, as well as a single person object to add to the passed array. It should return an array whose length is 1 greater than the passed array, with the passed person object at the end of the array.
 
