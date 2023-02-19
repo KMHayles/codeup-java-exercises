@@ -4,22 +4,23 @@ package shapes;
 
 public class Rectangle {
 
-    private static double length;
-    private static double width;
+    //------protected means it can only be accessed by inherited by their children etc...
+    protected  int length;
+    protected int width;
 
     //getters
-    public double getArea() {
+    public int getArea() {
         return length * width;
     }
 
-    public double getParameter() {
+    public int getParameter() {
         return 2 * length + 2 * width;
     }
 
     //constructor
-    public Rectangle(double length, double width) {
-        Rectangle.length = length;
-        Rectangle.width = width;
+    public Rectangle(int length, int width) {
+        this.length = length;
+        this.width = width;
     }
 
 }
