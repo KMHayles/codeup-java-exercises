@@ -92,7 +92,7 @@ import java.util.Scanner;
             return scanner.nextLine();
         }
 
-        // Solution: David Lara and John Pedrotti
+        // Solution: David Lara and John Pedrotti - Dr. Javier lesson
         public boolean yesNo(){
             System.out.println("Yes or no?");
             String userInput = scanner.nextLine();
