@@ -2,7 +2,7 @@ package shapes;
 
 //import java.awt.*;
 
-public class Rectangle extends quadrilateral {
+public class Rectangle extends Quadrilateral implements Measurable {
 
 
     public Rectangle(int length, int width) {
